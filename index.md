@@ -28,4 +28,4 @@ GradleX is developed by
 * [Benedikt Ritter](https://github.com/britter)
 * [Jendrik Johannes](https://github.com/jjohannes)
 
-You can contact the team via [team@gradlex.org](mailto:team@gradlex.org)
+You can contact the team via [team@gradlex.org](mailto:team@gradlex.org).

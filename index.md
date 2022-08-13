@@ -2,7 +2,7 @@
 layout: default
 ---
 
-GradleX provides high quality extensions for the Gradle Build Tool that make it more pleasant to use.
+GradleX provides high quality extensions for the [Gradle Build Tool](https://gradle.org) that make it more pleasant to use.
 It is operated by a community of experienced Gradle developers.
 
 # Plugins

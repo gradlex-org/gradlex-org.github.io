@@ -9,9 +9,11 @@ It is operated by a community of experienced Gradle developers.
 
 ## General purpose
 
-* Build parameters
+* [Build parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
 
 ## JVM
+
+Coming soon...
 
 * Java Module Dependencies
 * Extra Java Module Info

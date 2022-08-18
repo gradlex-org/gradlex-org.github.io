@@ -13,9 +13,9 @@ It is operated by a community of experienced Gradle developers.
 
 ## JVM - Java Module System
 
-* [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules in a modular Java project
+* [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules
 * [java-module-dependencies](https://github.com/gradlex-org/java-module-dependencies) - Use dependencies from 'module-info.java' files
-* [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn JVM Test Suites into Blackbox or Whitebox Test Suite for Java Modules
+* [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn Test Suites into Blackbox or Whitebox Test Suites
 
 # Learning Resources
 

@@ -9,15 +9,13 @@ It is operated by a community of experienced Gradle developers.
 
 ## General purpose
 
-* [Build parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
+* [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
 
-## JVM
+## JVM - Java Module System
 
-Coming soon...
-
-* Java Module Dependencies
-* Extra Java Module Info
-* Java Module Testing
+* [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules in a modular Java project
+* [java-module-dependencies](https://github.com/gradlex-org/java-module-dependencies) - Use dependencies from 'module-info.java' files
+* [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn JVM Test Suites into Blackbox or Whitebox Test Suite for Java Modules
 
 # Learning Resources
 

@@ -30,6 +30,11 @@ GradleX is developed by
 
 You can contact the team via [team@gradlex.org](mailto:team@gradlex.org).
 
+# Support
+
+GradleX is an open-source project that is developed and maintained by the team on a voluntary basis.
+If you require support with using GradleX plugins, or Gradle in general, you can contact [Jendrik](mailto:jendrik@gradlex.org) who offers professional Gradle consulting and training on [onepiece.Software](https://onepiece.software).
+
 # Disclaimer
 
 Gradle and the Gradle logo are trademarks of Gradle, Inc.

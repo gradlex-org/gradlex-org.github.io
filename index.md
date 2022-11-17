@@ -10,6 +10,7 @@ It is operated by a community of experienced Gradle developers.
 ## General purpose
 
 * [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
+* [java-ecosystem-capabilities](https://github.com/gradlex-org/java-ecosystem-capabilities) - Capability metadata for well-known Java components
 
 ## JVM - Java Module System
 

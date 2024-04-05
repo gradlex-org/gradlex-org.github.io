@@ -10,13 +10,17 @@ It is operated by a community of experienced Gradle developers.
 ## General purpose
 
 * [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
-* [java-ecosystem-capabilities](https://github.com/gradlex-org/java-ecosystem-capabilities) - Capability metadata for well-known Java components
+
+## JVM
+
+* [jvm-dependency-conflict-resolution](https://github.com/gradlex-org/jvm-dependency-conflict-resolution) - Dependency Conflict Detection and Resolution
 
 ## JVM - Java Module System
 
 * [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules
 * [java-module-dependencies](https://github.com/gradlex-org/java-module-dependencies) - Use dependencies from 'module-info.java' files
 * [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn Test Suites into Blackbox or Whitebox Test Suites
+* [java-module-packaging](https://github.com/gradlex-org/java-module-packaging) - Package stand-alone Java applications for multiple systems
 
 # Learning Resources
 

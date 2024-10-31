@@ -10,6 +10,7 @@ It is operated by a community of experienced Gradle developers.
 ## General purpose
 
 * [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
+* [reproducible-builds](https://github.com/gradlex-org/reproducible-builds) - Reproducibility settings applied to some of Gradle's built-in task, that should really be the default
 
 ## JVM
 

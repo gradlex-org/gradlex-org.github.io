@@ -9,19 +9,19 @@ It is operated by a community of experienced Gradle developers.
 
 ## General purpose
 
-* [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
-* [reproducible-builds](https://github.com/gradlex-org/reproducible-builds) - Reproducibility settings applied to some of Gradle's built-in task, that should really be the default
+- [build-parameters](https://github.com/gradlex-org/build-parameters) - Compile-safe access to parameters supplied to a Gradle build
+- [reproducible-builds](https://github.com/gradlex-org/reproducible-builds) - Reproducibility settings applied to some of Gradle's built-in task, that should really be the default
 
 ## JVM
 
-* [jvm-dependency-conflict-resolution](https://github.com/gradlex-org/jvm-dependency-conflict-resolution) - Dependency Conflict Detection and Resolution
+- [jvm-dependency-conflict-resolution](https://github.com/gradlex-org/jvm-dependency-conflict-resolution) - Dependency Conflict Detection and Resolution
 
 ## JVM - Java Module System
 
-* [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules
-* [java-module-dependencies](https://github.com/gradlex-org/java-module-dependencies) - Use dependencies from 'module-info.java' files
-* [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn Test Suites into Blackbox or Whitebox Test Suites
-* [java-module-packaging](https://github.com/gradlex-org/java-module-packaging) - Package stand-alone Java applications for multiple systems
+- [extra-java-module-info](https://github.com/gradlex-org/extra-java-module-info) - Use legacy Java libraries as Java Modules
+- [java-module-dependencies](https://github.com/gradlex-org/java-module-dependencies) - Use dependencies from 'module-info.java' files
+- [java-module-testing](https://github.com/gradlex-org/java-module-testing) - Turn Test Suites into Blackbox or Whitebox Test Suites
+- [java-module-packaging](https://github.com/gradlex-org/java-module-packaging) - Package stand-alone Java applications for multiple systems
 
 # Learning Resources
 
@@ -29,10 +29,10 @@ If you're interested in learning more about Gradle, check out Jendrik's [Underst
 
 # Team
 
-GradleX is developed by 
+GradleX is developed by
 
-* [Benedikt Ritter](https://github.com/britter)
-* [Jendrik Johannes](https://github.com/jjohannes)
+- [Benedikt Ritter](https://github.com/britter)
+- [Jendrik Johannes](https://github.com/jjohannes)
 
 You can contact the team via [team@gradlex.org](mailto:team@gradlex.org).
 

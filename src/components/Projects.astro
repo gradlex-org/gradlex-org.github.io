@@ -1,23 +1,41 @@
-<!-- Main Content Section -->
+---
+import { projects } from '../config/gradlex.json';
+
+type Project = {
+  name: string;
+  category: string;
+  description: string;
+}
+
+function getGitHubLink(projectName: string): string {
+  return `https://github.com/gradlex-org/${projectName.toLowerCase().replace(/\s+/g, '-')}`;
+}
+
+function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
+  return projects.reduce<Record<string, Project[]>>((acc, project) => {
+    acc[project.category] = acc[project.category] || [];
+    acc[project.category].push(project);
+    return acc;
+  }, {});
+}
+
+const categorizedProjects = mapProjectsByCategory(projects);
+---
 <section class="py-12">
-  <div class="max-w-4xl mx-auto grid gap-8 md:grid-cols-2 sm:grid-cols-1">
-    <!-- Tile Example -->
-    <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
-      <h3 class="text-2xl font-semibold text-gray-800">GradleX Plugin A</h3>
-      <p class="text-gray-600 mt-2">A powerful plugin for efficient build optimization and customization.</p>
-      <a href="https://github.com/GradleX/plugin-a" class="text-blue-500 mt-4 inline-block hover:underline">View on GitHub</a>
+    <div class="max-w-4xl mx-auto">
+      {Object.entries(categorizedProjects).map(([category, projects]) => (
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">{category}</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            {projects.map(project => (
+              <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
+                <h3 class="text-2xl font-semibold text-gray-800">{project.name}</h3>
+                <p class="text-gray-600 mt-2">{project.description}</p>
+                <a href={getGitHubLink(project.name)} class="text-blue-500 mt-4 inline-block hover:underline" target="_blank">View on GitHub</a>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
-
-    <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
-      <h3 class="text-2xl font-semibold text-gray-800">GradleX Plugin B</h3>
-      <p class="text-gray-600 mt-2">A comprehensive solution to manage multi-project dependencies.</p>
-      <a href="https://github.com/GradleX/plugin-b" class="text-blue-500 mt-4 inline-block hover:underline">View on GitHub</a>
-    </div>
-
-    <div class="bg-white shadow-lg rounded-2xl p-6 hover:shadow-2xl transition">
-      <h3 class="text-2xl font-semibold text-gray-800">GradleX Library</h3>
-      <p class="text-gray-600 mt-2">Reusable library utilities for advanced Gradle builds.</p>
-      <a href="https://github.com/GradleX/library" class="text-blue-500 mt-4 inline-block hover:underline">View on GitHub</a>
-    </div>
-  </div>
 </section>

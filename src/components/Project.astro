@@ -4,6 +4,11 @@ import { Icon } from "astro-icon/components";
 const { name, description } = Astro.props;
 
 const pluginId = name.toLowerCase().replace(/\s+/g, "-");
+
+function getPluginPortalBadge(): string {
+  const metadataUrl = `https://plugins.gradle.org/m2/org/gradlex/${pluginId}/org.gradlex.${pluginId}.gradle.plugin/maven-metadata.xml`;
+  return `https://img.shields.io/maven-metadata/v?label=Plugin%20Portal&metadataUrl=${encodeURIComponent(metadataUrl)}`;
+}
 ---
 
 <div
@@ -19,46 +24,30 @@ const pluginId = name.toLowerCase().replace(/\s+/g, "-");
     <div class="flex space-x-4">
       <a
         href={`https://github.com/gradlex-org/${pluginId}`}
-        class="text-blue-500 hover:underline flex items-center"
+        class="text-gray-500 hover:underline flex items-center text-2xl"
         target="_blank"
+        title="GitHub"
       >
         <Icon name="GitHub" />
-        GitHub
       </a>
       <a
         href={`https://gradlex.org/${pluginId}`}
-        class="text-green-500 hover:underline flex items-center"
+        class="text-gray-500 hover:underline flex items-center text-2xl"
         target="_blank"
+        title="Documentation"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          class="w-5 h-5 mr-1"
-        >
-          <path
-            d="M12 2c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8zm-1 2H4v16h7V4zm9 2c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1h-5v2h3v2H8v-2h3v-2H6c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h14zm-1 2H6v10h14V8z"
-          ></path>
-        </svg>
-        Docs
+        <Icon name="Book" />
       </a>
     </div>
     <a
       href={`https://plugins.gradle.org/plugin/org.gradlex.${pluginId}`}
       class="text-indigo-500 hover:underline flex items-center"
       target="_blank"
+      ><img
+        src={getPluginPortalBadge()}
+        alt="Plugin Portal Badge"
+        class="w-auto h-6"
+      /></a
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 24 24"
-        class="w-5 h-5 mr-1"
-      >
-        <path
-          d="M12 0C5.4 0 0 5.4 0 12c0 6.6 5.4 12 12 12 6.6 0 12-5.4 12-12C24 5.4 18.6 0 12 0zm0 22c-5.5 0-10-4.5-10-10 0-5.5 4.5-10 10-10s10 4.5 10 10c0 5.5-4.5 10-10 10zm-1-5h2v-2h-2v2zm0-10h2v6h-2V7z"
-        ></path>
-      </svg>
-      Plugin Portal
-    </a>
   </div>
 </div>

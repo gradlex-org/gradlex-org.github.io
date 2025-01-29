@@ -1,26 +1,12 @@
 ---
-import { Icon } from "astro-icon/components";
 import { projects } from "../config/gradlex.json";
+import Project from "./Project.astro";
 
 type Project = {
   name: string;
   category: string;
   description: string;
 };
-
-function getGitHubLink(projectName: string): string {
-  return `https://github.com/gradlex-org/${projectName.toLowerCase().replace(/\s+/g, "-")}`;
-}
-
-// Helper function to derive documentation link from project name
-function getDocsLink(projectName: string): string {
-  return `https://gradlex.org/docs/${projectName.toLowerCase().replace(/\s+/g, "-")}`;
-}
-
-// Helper function to derive Gradle Plugin Portal link from project name
-function getPluginPortalLink(projectName: string): string {
-  return `https://plugins.gradle.org/plugin/com.gradlex.${projectName.toLowerCase().replace(/\s+/g, "-")}`;
-}
 
 function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
   return projects.reduce<Record<string, Project[]>>((acc, project) => {
@@ -41,56 +27,7 @@ const categorizedProjects = mapProjectsByCategory(projects);
           <h2 class="text-3xl font-bold text-gray-800 mb-4">{category}</h2>
           <div class="grid gap-8 md:grid-cols-2">
             {projects.map((project) => (
-              <div class="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between hover:shadow-2xl transition h-full">
-                <div>
-                  <h3 class="text-2xl font-semibold text-gray-800">
-                    {project.name}
-                  </h3>
-                  <p class="text-gray-600 mt-2">{project.description}</p>
-                </div>
-                <div class="flex justify-between mt-4">
-                  <div class="flex space-x-4">
-                    <a
-                      href={getGitHubLink(project.name)}
-                      class="text-blue-500 hover:underline flex items-center"
-                      target="_blank"
-                    >
-                      <Icon name="GitHub" />
-                      GitHub
-                    </a>
-                    <a
-                      href={getDocsLink(project.name)}
-                      class="text-green-500 hover:underline flex items-center"
-                      target="_blank"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="currentColor"
-                        viewBox="0 0 24 24"
-                        class="w-5 h-5 mr-1"
-                      >
-                        <path d="M12 2c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h8zm-1 2H4v16h7V4zm9 2c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1h-5v2h3v2H8v-2h3v-2H6c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h14zm-1 2H6v10h14V8z" />
-                      </svg>
-                      Docs
-                    </a>
-                  </div>
-                  <a
-                    href={getPluginPortalLink(project.name)}
-                    class="text-indigo-500 hover:underline flex items-center"
-                    target="_blank"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      class="w-5 h-5 mr-1"
-                    >
-                      <path d="M12 0C5.4 0 0 5.4 0 12c0 6.6 5.4 12 12 12 6.6 0 12-5.4 12-12C24 5.4 18.6 0 12 0zm0 22c-5.5 0-10-4.5-10-10 0-5.5 4.5-10 10-10s10 4.5 10 10c0 5.5-4.5 10-10 10zm-1-5h2v-2h-2v2zm0-10h2v6h-2V7z" />
-                    </svg>
-                    Plugin Portal
-                  </a>
-                </div>
-              </div>
+              <Project name={project.name} description={project.description} />
             ))}
           </div>
         </div>

@@ -1,0 +1,37 @@
+---
+import projects from "../data/projects.json";
+import Project from "./Project.astro";
+
+type Project = {
+  name: string;
+  category: string;
+  description: string;
+};
+
+function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
+  return projects.reduce<Record<string, Project[]>>((acc, project) => {
+    acc[project.category] = acc[project.category] || [];
+    acc[project.category].push(project);
+    return acc;
+  }, {});
+}
+
+const categorizedProjects = mapProjectsByCategory(projects);
+---
+
+<section class="py-12 flex flex-col">
+  <div class="max-w-4xl mx-auto">
+    {
+      Object.entries(categorizedProjects).map(([category, projects]) => (
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">{category}</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            {projects.map((project) => (
+              <Project name={project.name} description={project.description} />
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

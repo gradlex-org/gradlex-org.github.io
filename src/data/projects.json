@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Build Parameters",
+    "category": "General purpose",
+    "description": "Compile-safe access to parameters supplied to a Gradle build"
+  },
+  {
+    "name": "Reproducible Builds",
+    "category": "General purpose",
+    "description": "Reproducibility settings applied to some of Gradle’s built-in task, that should really be the default"
+  },
+  {
+    "name": "JVM Dependency Conflict Resolution",
+    "category": "JVM",
+    "description": "Dependency Conflict Detection and Resolution"
+  },
+  {
+    "name": "Extra Java Module Info",
+    "category": "Java Module System",
+    "description": "Use legacy Java libraries as Java Modules"
+  },
+  {
+    "name": "Java Module Dependencies",
+    "category": "Java Module System",
+    "description": "Use dependencies from `module-info.java` files"
+  },
+  {
+    "name": "Java Module Testing",
+    "category": "Java Module System",
+    "description": "Turn Test Suites into Blackbox or Whitebox Test Suites"
+  },
+  {
+    "name": "Java Module Packaging",
+    "category": "Java Module System",
+    "description": "Package stand-alone Java applications for multiple systems"
+  },
+  {
+    "name": "Maven Plugin Development",
+    "category": "Maven",
+    "description": "Build Apache Maven™ plugins using Gradle"
+  }
+]

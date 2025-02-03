@@ -1,0 +1,53 @@
+---
+import { Icon } from "astro-icon/components";
+
+const { name, description } = Astro.props;
+
+const pluginId = name.toLowerCase().replace(/\s+/g, "-");
+
+function getPluginPortalBadge(): string {
+  const metadataUrl = `https://plugins.gradle.org/m2/org/gradlex/${pluginId}/org.gradlex.${pluginId}.gradle.plugin/maven-metadata.xml`;
+  return `https://img.shields.io/maven-metadata/v?label=Plugin%20Portal&metadataUrl=${encodeURIComponent(metadataUrl)}`;
+}
+---
+
+<div
+  class="bg-white shadow-lg rounded-2xl p-6 flex flex-col justify-between hover:shadow-2xl transition h-full"
+>
+  <div>
+    <h3 class="text-2xl font-semibold text-gray-800">
+      {name}
+    </h3>
+    <p class="text-gray-600 mt-2">{description}</p>
+  </div>
+  <div class="flex justify-between mt-4">
+    <div class="flex space-x-4">
+      <a
+        href={`https://github.com/gradlex-org/${pluginId}`}
+        class="text-gray-500 hover:underline flex items-center text-2xl"
+        target="_blank"
+        title="GitHub"
+      >
+        <Icon name="GitHub" />
+      </a>
+      <a
+        href={`https://gradlex.org/${pluginId}`}
+        class="text-gray-500 hover:underline flex items-center text-2xl"
+        target="_blank"
+        title="Documentation"
+      >
+        <Icon name="Book" />
+      </a>
+    </div>
+    <a
+      href={`https://plugins.gradle.org/plugin/org.gradlex.${pluginId}`}
+      class="text-indigo-500 hover:underline flex items-center"
+      target="_blank"
+      ><img
+        src={getPluginPortalBadge()}
+        alt="Plugin Portal Badge"
+        class="w-auto h-6"
+      /></a
+    >
+  </div>
+</div>

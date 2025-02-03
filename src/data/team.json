@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Benedikt Ritter",
+    "bio": "Benedikt is a freelance consultant with deep expertise in Developer Productivity Engineering (DPE), Engineering Growth, Gradle Build Tool, and NixOS. With over 5 years of experience at Gradle, Inc., Benedikt helps teams optimize workflows, scale engineering efforts, and improve build systems. Passionate about empowering teams to work smarter and deliver impactful software solutions, Benedikt is dedicated to unlocking the full potential of every team he works with.",
+    "picture": "https://avatars.githubusercontent.com/u/1327662?v=4",
+    "socialLinks": {
+      "github": "https://github.com/britter",
+      "mastodon": "https://chaos.social/@britter",
+      "linkedin": "https://www.linkedin.com/in/benedikt-ritter-83847b84/",
+      "website": "https://britter.dev",
+      "mail": "benedikt@gradlex.org"
+    }
+  },
+  {
+    "name": "Jendrik Johannes",
+    "bio": "Jendrik is a passionate software developer with an interest in tooling that makes development more efficient and productive. For several years, he was part of the core development team of Gradle Build Tool. Nowadays, he supports teams to increase their productivity and improve the maintainability of their software products using Gradle.",
+    "picture": "https://avatars.githubusercontent.com/u/1963746",
+    "socialLinks": {
+      "github": "https://github.com/jjohannes",
+      "mastodon": "https://mastodon.social/@jendrik",
+      "linkedin": "https://www.linkedin.com/in/jendrikjohannes",
+      "youtube": "https://youtube.com/@jjohannes",
+      "website": "https://onepiece.software",
+      "mail": "jendrik@gradlex.org"
+    }
+  },
+  {
+    "name": "Louis Jacomet",
+    "bio": "Louis has been perfecting his knowledge of Java for more than 20 years. Always a developer at heart, his role evolved over the last years to include technical team leading, coaching and some management. In addition to the bits and bytes, Louis is interested in people management skills mandatory to create a productive project team. To complete the buzzword bingo, Louis is interested in agile practices for the visibility, communication and result orientation it promotes. After working remotely from Belgium for Terracotta, with a focus on Ehcache, Louis is now part of the Gradle build tool team.",
+    "picture": "https://avatars.githubusercontent.com/u/135308",
+    "socialLinks": {
+      "github": "https://github.com/ljacomet",
+      "x": "https://x.com/ljacomet",
+      "mail": "louis@gradlex.org"
+    }
+  }
+]

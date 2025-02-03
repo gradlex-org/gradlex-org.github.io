@@ -19,7 +19,7 @@ function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
 const categorizedProjects = mapProjectsByCategory(projects);
 ---
 
-<section class="py-12">
+<section class="py-12 flex flex-col">
   <div class="max-w-4xl mx-auto">
     {
       Object.entries(categorizedProjects).map(([category, projects]) => (

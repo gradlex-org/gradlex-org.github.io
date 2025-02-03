@@ -53,6 +53,11 @@ import team from "../data/team.json";
                   <Icon name="Globe" class="w-6 h-6 text-green-600 hover:text-green-800" />
                 </a>
               )}
+              {member.socialLinks.mail && (
+                <a href={`mailto:${member.socialLinks.mail}`} title="Email" >
+                  <Icon name="Mail" class="w-6 h-6 text-slate-600 hover:text-slate-800" />
+                </a>
+              )}
             </div>
           </div>
         </div>

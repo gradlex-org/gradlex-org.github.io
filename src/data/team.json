@@ -7,7 +7,8 @@
       "github": "https://github.com/britter",
       "mastodon": "https://chaos.social/@britter",
       "linkedin": "https://www.linkedin.com/in/benedikt-ritter-83847b84/",
-      "website": "https://britter.dev"
+      "website": "https://britter.dev",
+      "mail": "benedikt@gradlex.org"
     }
   },
   {
@@ -19,7 +20,8 @@
       "mastodon": "https://mastodon.social/@jendrik",
       "linkedin": "https://www.linkedin.com/in/jendrikjohannes",
       "youtube": "https://youtube.com/@jjohannes",
-      "website": "https://onepiece.software"
+      "website": "https://onepiece.software",
+      "mail": "jendrik@gradlex.org"
     }
   },
   {
@@ -28,7 +30,8 @@
     "picture": "https://avatars.githubusercontent.com/u/135308",
     "socialLinks": {
       "github": "https://github.com/ljacomet",
-      "x": "https://x.com/ljacomet"
+      "x": "https://x.com/ljacomet",
+      "mail": "louis@gradlex.org"
     }
   }
 ]

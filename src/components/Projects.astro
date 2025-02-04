@@ -6,6 +6,7 @@ type Project = {
   name: string;
   category: string;
   description: string;
+  documentationLink?: string;
 };
 
 function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
@@ -27,7 +28,11 @@ const categorizedProjects = mapProjectsByCategory(projects);
           <h2 class="text-3xl font-bold text-gray-800 mb-4">{category}</h2>
           <div class="grid gap-8 md:grid-cols-2">
             {projects.map((project) => (
-              <Project name={project.name} description={project.description} />
+              <Project
+                name={project.name}
+                description={project.description}
+                documentationLink={project.documentationLink}
+              />
             ))}
           </div>
         </div>

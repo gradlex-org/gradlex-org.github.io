@@ -1,7 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const { name, description } = Astro.props;
+const { name, description, documentationLink } = Astro.props;
 
 const pluginId = name.toLowerCase().replace(/\s+/g, "-");
 
@@ -31,7 +31,9 @@ function getPluginPortalBadge(): string {
         <Icon name="GitHub" />
       </a>
       <a
-        href={`https://gradlex.org/${pluginId}`}
+        href={documentationLink
+          ? documentationLink
+          : `https://gradlex.org/${pluginId}`}
         class="text-gray-500 hover:underline flex items-center text-2xl"
         target="_blank"
         title="Documentation"

@@ -44,7 +44,7 @@
     "description": "Build Apache Maven™ plugins using Gradle"
   },
   {
-    "name": "Gradle Module Metadata Maven Plugin",
+    "name": "Gradle Metadata Maven Plugin",
     "category": "Maven",
     "description": "Apache Maven™ plugin to publish Gradle Module Metadata",
     "documentationLink": "https://github.com/gradlex-org/gradle-module-metadata-maven-plugin#maven-plugin-to-publish-gradle-module-metadata"

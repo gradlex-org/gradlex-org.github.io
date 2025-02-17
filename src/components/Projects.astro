@@ -4,9 +4,11 @@ import Project from "./Project.astro";
 
 type Project = {
   name: string;
+  id?: string,
   category: string;
   description: string;
   documentationLink?: string;
+  mavenCentral?: boolean;
 };
 
 function mapProjectsByCategory(projects: Project[]): Record<string, Project[]> {
@@ -30,8 +32,10 @@ const categorizedProjects = mapProjectsByCategory(projects);
             {projects.map((project) => (
               <Project
                 name={project.name}
+                id={project.id}
                 description={project.description}
                 documentationLink={project.documentationLink}
+                mavenCentral={project.mavenCentral}
               />
             ))}
           </div>

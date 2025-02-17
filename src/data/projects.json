@@ -18,25 +18,25 @@
     "name": "Extra Java Module Info",
     "category": "Java Module System",
     "description": "Use legacy Java libraries as Java Modules",
-    "documentationLink": "https://github.com/gradlex-org/extra-java-module-info?tab=readme-ov-file#extra-java-module-info-gradle-plugin"
+    "documentationLink": "https://github.com/gradlex-org/extra-java-module-info#extra-java-module-info-gradle-plugin"
   },
   {
     "name": "Java Module Dependencies",
     "category": "Java Module System",
     "description": "Use dependencies from `module-info.java` files",
-    "documentationLink": "https://github.com/gradlex-org/java-module-dependencies?tab=readme-ov-file#java-module-dependencies-gradle-plugin"
+    "documentationLink": "https://github.com/gradlex-org/java-module-dependencies#java-module-dependencies-gradle-plugin"
   },
   {
     "name": "Java Module Testing",
     "category": "Java Module System",
     "description": "Turn Test Suites into Blackbox or Whitebox Test Suites",
-    "documentationLink": "https://github.com/gradlex-org/java-module-testing?tab=readme-ov-file#java-module-testing-gradle-plugin"
+    "documentationLink": "https://github.com/gradlex-org/java-module-testing#java-module-testing-gradle-plugin"
   },
   {
     "name": "Java Module Packaging",
     "category": "Java Module System",
     "description": "Package stand-alone Java applications for multiple systems",
-    "documentationLink": "https://github.com/gradlex-org/java-module-packaging?tab=readme-ov-file#java-module-packaging-gradle-plugin"
+    "documentationLink": "https://github.com/gradlex-org/java-module-packaging#java-module-packaging-gradle-plugin"
   },
   {
     "name": "Maven Plugin Development",
@@ -45,8 +45,10 @@
   },
   {
     "name": "Gradle Metadata Maven Plugin",
+    "id": "gradle-module-metadata-maven-plugin",
     "category": "Maven",
     "description": "Apache Maven™ plugin to publish Gradle Module Metadata",
-    "documentationLink": "https://github.com/gradlex-org/gradle-module-metadata-maven-plugin#maven-plugin-to-publish-gradle-module-metadata"
+    "documentationLink": "https://github.com/gradlex-org/gradle-module-metadata-maven-plugin#maven-plugin-to-publish-gradle-module-metadata",
+    "mavenCentral": true
   }
 ]

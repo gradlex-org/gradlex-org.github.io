@@ -1,13 +1,18 @@
 ---
 import { Icon } from "astro-icon/components";
 
-const { name, description, documentationLink } = Astro.props;
+const { name, id, description, documentationLink, mavenCentral } = Astro.props;
 
-const pluginId = name.toLowerCase().replace(/\s+/g, "-");
+const pluginId = id ? id : name.toLowerCase().replace(/\s+/g, "-");
 
 function getPluginPortalBadge(): string {
   const metadataUrl = `https://plugins.gradle.org/m2/org/gradlex/${pluginId}/org.gradlex.${pluginId}.gradle.plugin/maven-metadata.xml`;
   return `https://img.shields.io/maven-metadata/v?label=Plugin%20Portal&metadataUrl=${encodeURIComponent(metadataUrl)}`;
+}
+
+function getMavenCentralBadge(): string {
+  const metadataUrl = `https://repo1.maven.org/maven2/org/gradlex/${pluginId}/maven-metadata.xml`;
+  return `https://img.shields.io/maven-metadata/v?label=Maven%20Central&metadataUrl=${encodeURIComponent(metadataUrl)}`;
 }
 ---
 
@@ -42,11 +47,13 @@ function getPluginPortalBadge(): string {
       </a>
     </div>
     <a
-      href={`https://plugins.gradle.org/plugin/org.gradlex.${pluginId}`}
+      href={mavenCentral
+        ? `https://repo1.maven.org/maven2/org/gradlex/${pluginId}`
+        : `https://plugins.gradle.org/plugin/org.gradlex.${pluginId}`}
       class="text-indigo-500 hover:underline flex items-center"
       target="_blank"
       ><img
-        src={getPluginPortalBadge()}
+        src={mavenCentral ? getMavenCentralBadge() : getPluginPortalBadge()}
         alt="Plugin Portal Badge"
         class="w-auto h-6"
       /></a

@@ -50,5 +50,13 @@
     "description": "Apache Maven™ plugin to publish Gradle Module Metadata",
     "documentationLink": "https://github.com/gradlex-org/gradle-module-metadata-maven-plugin#maven-plugin-to-publish-gradle-module-metadata",
     "mavenCentral": true
+  },
+  {
+    "name": "Java Module Dependencies Maven Extension",
+    "id": "java-module-dependencies-maven-extension",
+    "category": "Maven",
+    "description":  "Use dependencies from `module-info.java` files",
+    "documentationLink": "https://github.com/gradlex-org/java-module-dependencies-maven-extension?tab=readme-ov-file#java-module-dependencies-maven-extension",
+    "mavenCentral": true
   }
 ]
